@@ -1,0 +1,23 @@
+@import url('http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext');
+
+html, body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 22px !important;
+}
+
+#app {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 22px !important;
+}
+
+.v-main {
+    background-color: #e5e5e5;
+}
+
+.v-btn {
+    text-transform: none;
+    font-weight: 700;
+    font-size: 18px !important;
+}
