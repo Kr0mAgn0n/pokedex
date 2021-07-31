@@ -5,7 +5,7 @@
     <List v-if="items.length" :pokemons="items"></List>
     <EmptyList v-else></EmptyList> 
     <v-overlay :value="loading" color="#ffffff" opacity="1">
-      <v-img src="../assets/img/loading.png">
+      <v-img class="loading-img" src="../assets/img/loading.png">
       </v-img>
     </v-overlay>     
   </v-container>
@@ -48,5 +48,36 @@
 <style scoped>
 .container {
   max-width: 1152px;
+}
+
+.loading-img {
+  animation: fadeInFromNone 2s linear;
+}
+
+@keyframes fadeInFromNone {
+    0% {
+        display: block;
+        opacity: 1;
+    }
+
+    25% {
+        display: block;
+        opacity: 0.5;
+    }
+
+    50% {
+        display: block;
+        opacity: 0.25;
+    }
+
+    75% {
+        display: block;
+        opacity: 0.5;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
 }
 </style>
